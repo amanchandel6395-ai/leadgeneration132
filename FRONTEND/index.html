@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creta Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>🔍 Creta Smart Search Engine</h1>
+        <p>Your AI-powered professional search engine & job lead generator</p>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search anything…">
+            <button onclick="searchNow()"><i class="fa fa-search"></i></button>
+        </div>
+
+        <div class="filter-row">
+            <select id="typeFilter">
+                <option value="">All Types</option>
+                <option value="web">Web Results</option>
+                <option value="news">News</option>
+                <option value="videos">Videos</option>
+                <option value="images">Images</option>
+            </select>
+
+            <select id="dateFilter">
+                <option value="">Any Time</option>
+                <option value="d1">Past 24 Hours</option>
+                <option value="d7">Past 7 Days</option>
+                <option value="d30">Past 30 Days</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Job & Lead Tools -->
+    <section class="tools">
+        <h2>🔥 Professional Tools</h2>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <i class="fa fa-briefcase"></i>
+                <h3>Job Finder</h3>
+                <p>Find the latest jobs from top platforms.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fa fa-microphone-lines"></i>
+                <h3>Dubbing Leads</h3>
+                <p>Find projects & creators seeking dubbing teams.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fa fa-pen-nib"></i>
+                <h3>Writer Leads</h3>
+                <p>Get microdrama & story writing leads.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fa fa-bullhorn"></i>
+                <h3>Marketing Leads</h3>
+                <p>Find agencies & advertisers looking for talent.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results"></section>
+    <div id="pagination" class="pagination"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
